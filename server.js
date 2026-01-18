@@ -34,6 +34,7 @@ app.get("/users/:id",(req,res)=>{
     })
 // Post Mthod
 app.post("/users",(req,res) => {
+    //{name} is object destructing which helps to define values from and object and put in the variable
     const {name} = req.body;
     const newUser = {
         id: users.length + 1,
